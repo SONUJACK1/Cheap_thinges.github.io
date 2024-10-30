@@ -1,0 +1,60 @@
+/*Add card styling to the product class */
+.product {
+  background-color: #d41414;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(236, 10, 10, 0.1);
+  text-align: center;
+  margin: 10px;
+  margin-top: 0cm;
+  width: 200px; /* Set a fixed width for each card */
+}
+
+.product img {
+  width: 4cm;
+  height: 4cm;
+  border-radius: 10px; /* Adjust border-radius to match the card */
+}
+
+.product h3 {
+  color: #690572;
+  font-size: large;
+}
+
+.product h5 {
+  margin-top: -0.20cm;
+  font-size: 40px;
+}
+
+button {
+  background-color: #b41616;
+  color: rgb(5, 2, 8);
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 2cm;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #a04545;
+}
+
+.fa-star {
+  color: rgb(136, 117, 8);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap; /* Ensure items stay in a single row */
+  overflow-x: auto; /* Enable horizontal scrolling if necessary */
+  margin: 20px;
+}
+
+
+

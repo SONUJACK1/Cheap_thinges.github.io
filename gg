@@ -1,0 +1,37 @@
+def calculate_area(name):
+    name == name.lower()
+    if (name == 'Rectangle'):
+        b = int(input('Enter the  breadth of the reactangle'))
+        l = int(input('Enter the length of the rectangle'))
+        react_area = l * b
+        print('The area of the rectangle is: ',react_area)
+
+    elif(name == 'square'):
+        s = int(inpout(;Enter the side of the square))
+        sqr_area = s * s
+        print('THe area of the square is: ',sqr_area)
+
+    elif (name == 'circle'):
+        pi = 3.14
+        r = int(input('Enter the radius of the circle'))
+        circle_area = pi * 2 * * r
+        print('The area of the square is:',circle_area)
+    else:
+        print('THe shape is not avaliable')
+        print('calculate shape area')
+        shape name = input('Enter the name of shape whose area you want to find: ')
+        calculate_area(shape_name)
+
+        Calculate the shape name
+        Enter the shape whose are you want to find:square
+        Enter the side of the square:10
+        The area of the square is:100
+
+ 
+
+ 
+
+    str = 'OrangeEduacation'
+    print('str = str')
+    print('str[0]= str[0]')
+    print('str[-1]=str[-1]')

@@ -1,0 +1,12 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Process the email sending here
+    $to = "neha6n@gmail.com";
+    $subject = "Buy Now Clicked";
+    $message = "Buy Now button clicked on your website!";
+    $headers = "From: webmaster@example.com";
+
+    // Send email
+    mail($to, $subject, $message, $headers);
+}
+?>

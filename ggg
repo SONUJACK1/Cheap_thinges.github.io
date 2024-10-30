@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combined Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1; /* Adjust the color code as needed */
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    .product {
+      background-color: #DBB98F;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px #740707;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .product img {
+      width: 100%;
+      max-height: 150px; /* Adjust as needed */
+      border-radius: 10px;
+    }
+
+    .product h5 {
+      font-size: 23px;
+      margin-top: -0.20cm;
+    }
+
+    button {
+      background-color: #833203;
+      color: rgb(115, 88, 138);
+      padding: 10px 20px;
+      text-align: center;
+      margin-bottom: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #a04545;
+    }
+
+    .fa-star {
+      color: rgb(136, 117, 8);
+      font-size: 2px;
+    }
+
+    .curved {
+      background: #DBB98F;
+      color: #832B00;
+      text-align: center;
+      background-size: 50cm;
+    }
+
+    .curved h1 {
+      font-size: 2cm;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .body {
+      width: 100px;
+      height: 100pw;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .add-to-cart-btn {
+      background-color:  #DBB98F;
+      color: rgb(112, 7, 7);
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      display: flex;
+      align-items: left;
+    }
+  </style>
+</head>
+<body>
+  <a href="/si.html" class="add-to-cart-btn">
+    <button>
+      <!-- Your button content goes here -->
+      <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm1-4H5m0 0L3 4m0 0h5.501M3 4l-.792-3H1m11 3h6m-3 3V1 "</path>
+        Hello
+      </svg>
+      Cart
+    </button>
+  </a>
+
+  <div class="curved">
+    <h1>Welcome</h1>
+  </div>
+
+  <div class="container">
+    <div class="product">
+      <img src="J:\CCDS\HTML\gta.jpg" alt="Product 1">
+      <h5>$100</h5>
+      <button onclick="window.location.href = 'J:/CCDS/hmmm.html';">Buy Now</button>
+      <button onclick="window.location.href = 'J:/CCDS/hmmm.html';">Add to cart</button>
+      <ul>
+        <li><i class="fa fa-star checked"></i></li>
+      </ul>
+    </div>
+
+    <!-- Repeat the above product div for other images -->
+
+    <div class="product">
+      <img src="J:\CCDS\HTML\gta.jpg" alt="Product 2">
+      <h5>$100</h5>
+      <button onclick="window.location.href = 'J:/CCDS/hmmm.html';">Buy Now</button>
+      <button onclick="window.location.href = 'J:/CCDS/hmmm.html';">Add to cart</button>
+      <ul>
+        <li><i class="fa fa-star checked"></i></li>
+      </ul>
+    </div>
+
+    <!-- Repeat the product div for other images -->
+
+    <!-- Add more product divs as needed -->
+  </div>
+
+  <!-- Form Section -->
+  <form 
+    action="https://formspree.io/f/mjvngerp" 
+    method="POST"
+    id="form"
+  >
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="Pincode">Pincode:</label>
+    <input type="text" id="Pincode" name="Pincode" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById('form').addEventListener('submit', function(event) {
+      var name = document.getElementById('name').value;
+      var address = document.getElementById('address').value;
+      var pincode = document.getElementById('Pincode').value;
+
+      alert('Name: ' + name + '\nAddress: ' + address + '\nPincode: ' + pincode);
+    });
+  </script>
+</body>
+</html>

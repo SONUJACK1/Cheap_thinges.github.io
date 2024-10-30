@@ -1,0 +1,77 @@
+/*body {
+  font-size: 10px;
+  background-color: url("C:\Users\manoj\Desktop\flowers.jpg");
+  background-size: cover; */
+     
+
+
+  .container {
+    position: relative;
+    display: flex;*/
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    /*flex-wrap: wrap;
+    margin: 20px;
+    /*flex-wrap: wrap; /* Ensure items stay in a single row */
+    flex-wrap: wrap;
+  
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+   
+  }
+  
+  
+  
+  .product {
+    background-color: rgb(148, 170, 170);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #740707;
+    text-align: center;
+    margin: 10px;
+    margin-top: 0cm;
+    width: 200px;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 4cm;
+    border-radius: 10px;
+    
+  }
+  .product h3 {
+    color: #a04545;
+  }
+  
+  .product h5 {
+    font-size: 23px;
+    margin-top: -0.20cm;
+  }
+  
+  button {
+    background-color: #000000;
+    color: rgb(115, 88, 138);
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 2cm;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  
+  }
+  
+  button:hover {
+    background-color: #a04545;
+  }
+  
+  .fa-star {
+    color: rgb(136, 117, 8);
+    font-size: 2px;
+  }
+  
+  .vertical {
+    flex-direction: column;
+    align-items: bottom;
+  }
